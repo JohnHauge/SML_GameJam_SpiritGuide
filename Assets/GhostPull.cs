@@ -29,8 +29,8 @@ public class GhostPull : MonoBehaviour
             direction = ghostPos - pos;
             magnitude = direction.magnitude;
             if (magnitude < 4){
-                force = ghost.strength/(magnitude + 2) ;
-                target.velocity = target.velocity + direction.normalized * force * Time.deltaTime;
+                force = ghost.strength/(magnitude*magnitude + 2) ;
+                target.AddForce(direction.normalized * force);
                 ghost.SetEnergy(ghost.GetEnergy() - Time.deltaTime);
                 print("Energy = " + ghost.GetEnergy());
             }else
