@@ -13,6 +13,7 @@ public class Ghost : MonoBehaviour
     private float energy;
     private bool draining;
     private bool exhausted;
+    public CircleCollider2D puller;
     public float maxEnergy;
     public float strength;
     public int powerup;
@@ -20,6 +21,9 @@ public class Ghost : MonoBehaviour
 
     private void Start()
     {
+        puller = new GameObject("hitBox", typeof(CircleCollider2D)).GetComponent(typeof(CircleCollider2D)) as CircleCollider2D;
+        puller.radius = 0.5f;
+        puller.isTrigger = true;
         body = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         energy = maxEnergy;
     }
@@ -36,6 +40,22 @@ public class Ghost : MonoBehaviour
             body.velocity = move * playerSpeed;
         }
         if (!draining && energy < maxEnergy) energy += Time.deltaTime;
+
+        if(Input.GetButton("Fire1"))
+        {
+            print(puller.enabled);
+            if(!puller.enabled && energy > 0.5)
+            {
+                puller.enabled = true;
+            } else if(energy <= 0){puller.enabled = false;
+            } else if(puller.enabled){
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 0;
+                puller.transform.position = Camera.main.ScreenToWorldPoint(mousePos);
+            }
+
+
+        } else {puller.enabled = false;}
     }
 
     public void SetEnergy(float f){energy = f;}
