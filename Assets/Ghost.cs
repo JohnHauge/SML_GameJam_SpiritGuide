@@ -22,7 +22,7 @@ public class Ghost : MonoBehaviour
     private void Start()
     {
         puller = new GameObject("hitBox", typeof(CircleCollider2D)).GetComponent(typeof(CircleCollider2D)) as CircleCollider2D;
-        puller.radius = 0.5f;
+        puller.radius = 0.2f;
         puller.isTrigger = true;
         body = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         energy = maxEnergy;

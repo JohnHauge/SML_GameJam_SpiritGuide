@@ -17,7 +17,6 @@ public class GhostPull : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hitBox = GameObject.Find("hitBox").GetComponent(typeof(Collider2D)) as Collider2D;
         ghost = GameObject.FindWithTag("Player").GetComponent(typeof(Ghost)) as Ghost;
         ghostBody = ghost.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         target = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
@@ -27,6 +26,8 @@ public class GhostPull : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+                hitBox = GameObject.Find("hitBox").GetComponent(typeof(Collider2D)) as Collider2D;
+
         if (hitBox.IsTouching(targetCollider) && ghost.GetEnergy() > 0){
             pos = target.position;
             ghostPos = ghostBody.position;
