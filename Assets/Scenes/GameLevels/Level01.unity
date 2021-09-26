@@ -1481,6 +1481,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5959550768760768177, guid: f3f4af246be2cc24b818ae52eba228b4, type: 3}
+      propertyPath: elevatorTravelTime
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5959550768760768178, guid: f3f4af246be2cc24b818ae52eba228b4, type: 3}
       propertyPath: m_Name
       value: Elevator (1)
@@ -6838,9 +6842,36 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 976207158}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Elevator, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2383407252510647888, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+--- !u!114 &976207158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5959550768760768177, guid: f3f4af246be2cc24b818ae52eba228b4, type: 3}
+  m_PrefabInstance: {fileID: 99719518}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8989cb6dfab71f1478a6abf4f2b69fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1093948691
 GameObject:
   m_ObjectHideFlags: 0
@@ -6881,6 +6912,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150372094 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5959550768760768177, guid: f3f4af246be2cc24b818ae52eba228b4, type: 3}
+  m_PrefabInstance: {fileID: 671328649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8989cb6dfab71f1478a6abf4f2b69fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1213864746
 GameObject:
   m_ObjectHideFlags: 0
@@ -7165,6 +7207,22 @@ PrefabInstance:
     - target: {fileID: 4199575035687399652, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1150372094}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Elevator, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2383407252510647888, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
@@ -7539,11 +7597,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1053775037867290859, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.811
+      value: -1.933
       objectReference: {fileID: 0}
     - target: {fileID: 1053775037867290859, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.096
+      value: -0.975
       objectReference: {fileID: 0}
     - target: {fileID: 1053775037867290859, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9161,6 +9219,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1802650295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5959550768760768177, guid: f3f4af246be2cc24b818ae52eba228b4, type: 3}
+  m_PrefabInstance: {fileID: 965714404}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8989cb6dfab71f1478a6abf4f2b69fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1807740242
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9229,12 +9298,20 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
       propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1953428908}
+      objectReference: {fileID: 1802650295}
     - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
       propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_enabled
+      value: StartElevator
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844717185690784055, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
+      propertyPath: startEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Elevator, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2383407252510647888, guid: 79160d2f60bbdd5419d070b640ccebde, type: 3}
