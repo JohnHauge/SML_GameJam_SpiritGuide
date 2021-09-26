@@ -17,6 +17,11 @@ public class Elevator : MonoBehaviour
     private void Awake() {
         _fromPos = elevatorRB.transform.position;
         _toPos = toPos.position;
+
+        toPos.gameObject.SetActive(false);
+
+        //Remove This
+        //Invoke("StartElevator", 2f);
     }
 
     private void StartElevator(){
@@ -27,12 +32,37 @@ public class Elevator : MonoBehaviour
 
     private IEnumerator elevatorRoutine(){
         
+        isActive = true;
         var t = 0f;
         bool goingTo = false;
 
-        while(t < elevatorTravelTime){
-            
+        while(t < elevatorTravelTime && !goingTo){
+            t += Time.fixedDeltaTime;
+
+            var lerp = Mathf.InverseLerp(0f, elevatorTravelTime, t);
+
+            elevatorRB.MovePosition(Vector2.Lerp(_fromPos, _toPos,lerp));
+
+            yield return new WaitForFixedUpdate();
         }
+
+        goingTo = true;
+        t = 0f;
+
+        yield return new WaitForSeconds(elevatorPauseTime);
+
+            while(t < elevatorTravelTime && goingTo){
+
+            t += Time.fixedDeltaTime;
+
+            var lerp = Mathf.InverseLerp(0f, elevatorTravelTime, t);
+
+            elevatorRB.MovePosition(Vector2.Lerp(_toPos,_fromPos,lerp));
+
+            yield return new WaitForFixedUpdate();
+        }
+
+        isActive = false;
 
         yield return null;
     }
