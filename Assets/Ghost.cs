@@ -7,7 +7,7 @@ public class Ghost : MonoBehaviour
     private Rigidbody2D body;
     private Vector2 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 8.0f;
+    private float playerSpeed = 1.0f;
     private float horizontal;
     private float vertical;
     private float energy;
