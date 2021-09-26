@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Button : MonoBehaviour
+{
+    public bool pressed;
+    //private float timer;
+    private Ghost ghost;
+    private Collider2D trigger;
+    private SpriteRenderer renderer;  
+    // Start is called before the first frame update
+    void Start()
+    {
+        trigger = gameObject.GetComponent(typeof(Collider2D)) as Collider2D;
+        renderer = gameObject.GetComponent(typeof(SpriteRenderer)) as SpriteRenderer;
+    }
+
+    // Update is called once per frame
+    void Update(){}
+
+    void OnTriggerEnter2D(Collider2D col){
+        ghost = col.gameObject.GetComponent(typeof(Ghost)) as Ghost;
+        print(col.name);
+        if (ghost.powerup == 1 && !pressed){
+            pressed = true;
+            //renderer.color = new Color(254, 116, 54);
+            renderer.color = Color.green;
+            ghost.powerup = 0;
+        }
+    }
+}
