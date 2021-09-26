@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 845922915}
   - component: {fileID: 845922916}
   - component: {fileID: 845922913}
+  - component: {fileID: 247326787116762716}
   m_Layer: 0
   m_Name: Wheel (1)
   m_TagString: Untagged
@@ -219,7 +220,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.3686367, y: -1.9300978}
+  m_ConnectedAnchor: {x: 0.3686368, y: -1.9300972}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -228,6 +229,22 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 359
+--- !u!58 &247326787116762716
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2794588307921137987}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000023841858, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &3733437506585623080
 GameObject:
   m_ObjectHideFlags: 0
