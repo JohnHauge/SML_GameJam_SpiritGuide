@@ -21,7 +21,7 @@ public class Elevator : MonoBehaviour
         toPos.gameObject.SetActive(false);
 
         //Remove This
-        Invoke("StartElevator", 2f);
+        //Invoke("StartElevator", 2f);
     }
 
     private void StartElevator(){
