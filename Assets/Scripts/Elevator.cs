@@ -24,7 +24,7 @@ public class Elevator : MonoBehaviour
         //Invoke("StartElevator", 2f);
     }
 
-    private void StartElevator(){
+    public void StartElevator(){
         if (isActive) return;
 
         StartCoroutine(elevatorRoutine());
