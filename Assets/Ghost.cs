@@ -68,4 +68,8 @@ public class Ghost : MonoBehaviour
         draining = false;
         }
 
+    public void setPowerupState(int state){
+        powerup = state;
+        print("Powerup: " + powerup);
+    }
 }
