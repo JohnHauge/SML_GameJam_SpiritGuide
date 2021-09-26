@@ -26,7 +26,7 @@ public class GhostPull : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                hitBox = GameObject.Find("hitBox").GetComponent(typeof(Collider2D)) as Collider2D;
+                hitBox = GameObject.Find("hitBox").GetComponent(typeof(Collider2D)) as Collider2D; 
 
         if (hitBox.IsTouching(targetCollider) && ghost.GetEnergy() > 0){
             pos = target.position;

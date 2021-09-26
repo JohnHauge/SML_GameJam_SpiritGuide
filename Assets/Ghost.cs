@@ -43,7 +43,6 @@ public class Ghost : MonoBehaviour
 
         if(Input.GetButton("Fire1"))
         {
-            print(puller.enabled);
             if(!puller.enabled && energy > 0.5)
             {
                 puller.enabled = true;
