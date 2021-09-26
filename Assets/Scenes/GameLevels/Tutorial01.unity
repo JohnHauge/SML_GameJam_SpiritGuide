@@ -1657,22 +1657,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1053775036452735951, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775036625894128, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775037241167099, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775037747961745, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 1053775037867290859, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1721,36 +1705,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: RagdollCharacter
       objectReference: {fileID: 0}
-    - target: {fileID: 1053775037867290860, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775037876069834, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775037969089560, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775038041003023, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775038142391764, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775038193604876, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1053775038273465537, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1053775037969089555, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc2f30bdb93c9af4ab61f0af65b92327, type: 3}
 --- !u!1 &1593894649
 GameObject:

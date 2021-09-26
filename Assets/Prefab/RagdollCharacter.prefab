@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1053775036452735948}
   - component: {fileID: 1053775036452735950}
   - component: {fileID: 1053775036452735949}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Right_Upper_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0018000004
+  m_Mass: 0.0018
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -147,7 +147,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.009999981, y: 0.039099995}
+  m_ConnectedAnchor: {x: 0.010000008, y: 0.039099943}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 1053775036625894125}
   - component: {fileID: 1053775036625894127}
   - component: {fileID: 1053775036625894126}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Left_Upper_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -279,7 +279,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0018000004
+  m_Mass: 0.0018
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -303,7 +303,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.009500058, y: 0.037599996}
+  m_ConnectedAnchor: {x: 0.009499995, y: 0.037600014}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -325,7 +325,7 @@ GameObject:
   - component: {fileID: 1053775037241167095}
   - component: {fileID: 1053775037241167096}
   - component: {fileID: 1053775037241167097}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Left_Upper_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -435,7 +435,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.003500001
+  m_Mass: 0.0035
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -459,7 +459,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.00000003259628, y: -0.07209997}
+  m_ConnectedAnchor: {x: 0.0000000040745363, y: -0.072099976}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -481,7 +481,7 @@ GameObject:
   - component: {fileID: 1053775037747961741}
   - component: {fileID: 1053775037747961742}
   - component: {fileID: 1053775037747961743}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Right_Lower_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0024000006
+  m_Mass: 0.0023999999
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -615,7 +615,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.0010000587, y: -0.04909998}
+  m_ConnectedAnchor: {x: -0.0009999957, y: -0.049099933}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -633,7 +633,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1053775037867290859}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RagdollCharacter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +647,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053775037867290860}
-  m_LocalRotation: {x: -0, y: -0, z: -0.6917734, w: 0.72211474}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6917714, w: 0.72211653}
   m_LocalPosition: {x: -0.184, y: -3.254, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 1053775037876069830}
   - component: {fileID: 1053775037876069831}
   - component: {fileID: 1053775037876069832}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Right_Lower_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -787,7 +787,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.004200001
+  m_Mass: 0.0042
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -811,7 +811,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.0029999646, y: -0.056599986}
+  m_ConnectedAnchor: {x: -0.0029999749, y: -0.056599915}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -832,8 +832,7 @@ GameObject:
   - component: {fileID: 1053775037969089557}
   - component: {fileID: 1053775037969089558}
   - component: {fileID: 1053775037969089559}
-  - component: {fileID: 1053775037969089555}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -943,7 +942,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0065000015
+  m_Mass: 0.0064999997
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -952,18 +951,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &1053775037969089555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1053775037969089560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a712168750d38d04d95dd9dd956d67a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1053775038041003023
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +964,7 @@ GameObject:
   - component: {fileID: 1053775038041003019}
   - component: {fileID: 1053775038041003020}
   - component: {fileID: 1053775038041003021}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Left_Lower_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1087,7 +1074,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0042000003
+  m_Mass: 0.0042
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1111,7 +1098,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.0045000133, y: -0.0586}
+  m_ConnectedAnchor: {x: -0.00450002, y: -0.058599982}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1133,7 +1120,7 @@ GameObject:
   - component: {fileID: 1053775038142391760}
   - component: {fileID: 1053775038142391761}
   - component: {fileID: 1053775038142391762}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Right_Upper_Foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,7 +1230,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.003500001
+  m_Mass: 0.0035
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1267,7 +1254,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.0004999312, y: -0.07319998}
+  m_ConnectedAnchor: {x: 0.0004999848, y: -0.073200025}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1289,7 +1276,7 @@ GameObject:
   - component: {fileID: 1053775038193604872}
   - component: {fileID: 1053775038193604873}
   - component: {fileID: 1053775038193604874}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Left_Lower_Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1399,7 +1386,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0024000006
+  m_Mass: 0.0023999999
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1423,7 +1410,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.0010001069, y: -0.04609999}
+  m_ConnectedAnchor: {x: -0.0009999953, y: -0.04610001}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -1445,7 +1432,7 @@ GameObject:
   - component: {fileID: 1053775038273465405}
   - component: {fileID: 1053775038273465406}
   - component: {fileID: 1053775038273465407}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1555,7 +1542,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0072000017
+  m_Mass: 0.0072000003
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1579,7 +1566,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.0041493783, y: -0.0021332547}
-  m_ConnectedAnchor: {x: 0.0041495627, y: 0.051966727}
+  m_ConnectedAnchor: {x: 0.004149357, y: 0.051966816}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
