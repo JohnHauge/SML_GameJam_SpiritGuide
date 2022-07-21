@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Ghost : MonoBehaviour
 {
@@ -18,11 +19,12 @@ public class Ghost : MonoBehaviour
     public float strength;
     public int powerup;
     
+    [SerializeField] private Light2D light2D;
 
     private void Start()
     {
         puller = new GameObject("hitBox", typeof(CircleCollider2D)).GetComponent(typeof(CircleCollider2D)) as CircleCollider2D;
-        puller.radius = 0.2f;
+        puller.radius = 0.05f;
         puller.isTrigger = true;
         body = gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
         energy = maxEnergy;
@@ -32,6 +34,10 @@ public class Ghost : MonoBehaviour
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        var lightLerp = Mathf.InverseLerp(0f, maxEnergy, energy);
+
+        light2D.intensity = lightLerp;
 
         Vector2 move = new Vector2(horizontal, vertical);
         

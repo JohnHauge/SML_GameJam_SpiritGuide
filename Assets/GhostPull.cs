@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GhostPull : MonoBehaviour
 {
+    private static GameObject currentGameObject;
     private Ghost ghost;
     private Vector2 ghostPos;
     private Rigidbody2D ghostBody;
@@ -26,14 +27,19 @@ public class GhostPull : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentGameObject != null && currentGameObject != gameObject) return;
+
                 hitBox = GameObject.Find("hitBox").GetComponent(typeof(Collider2D)) as Collider2D; 
 
         if (hitBox.IsTouching(targetCollider) && ghost.GetEnergy() > 0){
+            currentGameObject = gameObject;
             pos = target.position;
             ghostPos = ghostBody.position;
-            direction = ghostPos - pos;
+            Vector2 cursorPos = ghost.puller.transform.position;
+            direction = cursorPos - pos;
             magnitude = direction.magnitude;
             if (magnitude < 4){
+                
                 force = (ghost.strength/(magnitude*magnitude + 2))*Time.deltaTime;
                 print(force);
                 target.AddForce(direction.normalized * force);
@@ -45,6 +51,7 @@ public class GhostPull : MonoBehaviour
             }
         } else
         {
+            currentGameObject = null;
             ghost.stopDraining();
         }
     }

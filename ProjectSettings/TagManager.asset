@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Limb
+  - Body
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - UI
   - Ghost
   - Character
-  - 
+  - GamleBassen
   - 
   - 
   - 
@@ -44,4 +45,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Forground
+    uniqueID: 3764115635
     locked: 0

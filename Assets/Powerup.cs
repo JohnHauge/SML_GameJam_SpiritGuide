@@ -9,12 +9,15 @@ public class Powerup : MonoBehaviour
     private float timer;
     private Ghost ghost;
     private Collider2D trigger;
-    private SpriteRenderer renderer;
+    //private SpriteRenderer renderer;
+
+    [SerializeField] private GameObject ToTurnOff;
+
     // Start is called before the first frame update
     void Start()
     {
         trigger = gameObject.GetComponent(typeof(Collider2D)) as Collider2D;
-        renderer = gameObject.GetComponent(typeof(SpriteRenderer)) as SpriteRenderer;
+        //renderer = gameObject.GetComponent(typeof(SpriteRenderer)) as SpriteRenderer;
         timer = respawn;
     }
 
@@ -26,7 +29,8 @@ public class Powerup : MonoBehaviour
             timer -= Time.deltaTime;
             if (timer <= 0){
                 trigger.enabled = true;
-                renderer.enabled = true;
+                //renderer.enabled = true;
+                ToTurnOff.SetActive(true);
                 timer = respawn;
             }
         }
@@ -36,6 +40,7 @@ public class Powerup : MonoBehaviour
         ghost = col.gameObject.GetComponent(typeof(Ghost)) as Ghost;
         ghost.setPowerupState(powerup);
         trigger.enabled = false;
-        renderer.enabled = false;
+        //renderer.enabled = false;
+        ToTurnOff.SetActive(false);
     }
 }

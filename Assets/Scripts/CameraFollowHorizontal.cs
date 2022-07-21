@@ -15,7 +15,7 @@ public class CameraFollowHorizontal : MonoBehaviour {
     }
 
     private void Update() {
-        float cameraLerp = Mathf.InverseLerp(BodyMaxLeft, BodyMaxRight,bodyTransform.position.y);
+        float cameraLerp = Mathf.InverseLerp(BodyMaxRight, BodyMaxLeft,bodyTransform.position.x);
 
         _camera.transform.position = new Vector3(Mathf.Lerp(CameraMaxRight,CameraMaxLeft, cameraLerp), 0f, -10f);
     }

@@ -10,7 +10,7 @@ public class LoadLevel : MonoBehaviour
     private bool isLoading = false;
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Player")){
+        if(other.CompareTag("Body")){
             loadNewLevel();
         }
     }
